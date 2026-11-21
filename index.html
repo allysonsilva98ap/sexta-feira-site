@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sexta-feira — o seu JARVIS no Windows</title>
+<meta name="description" content="Sexta-feira é uma IA de voz que mora no topo da sua tela: você fala, ela faz. Abre programas, manda mensagem no WhatsApp, toca música, lembra de tudo, otimiza o PC e conversa com IA de verdade. Grátis para Windows.">
+<meta property="og:title" content="Sexta-feira — o seu JARVIS no Windows">
+<meta property="og:description" content="Você fala, ela faz. IA de voz grátis para Windows, com a cara de uma ilha no topo da tela.">
+<meta property="og:image" content="https://sextafeira.agenciabaseai.com.br/img/desktop-falando.webp">
+<meta name="theme-color" content="#0a0b0e">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div class="glow" id="glow"></div>
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#topo"><img src="img/logo.webp" alt="" width="34" height="34"><span>Sexta-feira</span></a>
+  <nav class="links">
+    <a href="#recursos">Recursos</a><a href="#cerebro">Cérebro</a><a href="#central">Central</a><a href="#amigos">Amigos</a><a href="#faq">Dúvidas</a>
+  </nav>
+  <a class="btn acc sm dl" href="#">Baixar grátis</a>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-txt">
+      <span class="badge reveal"><i class="dot"></i> Novo · versão 0.6</span>
+      <h1 class="reveal">Você fala.<br><span class="acc-txt">Ela faz.</span></h1>
+      <p class="lead reveal">A Sexta-feira é uma inteligência artificial de voz que mora no topo da sua tela, como um JARVIS de verdade. Abre programas, manda mensagem no WhatsApp, toca música, lembra de tudo e conversa com as IAs mais rápidas do mundo.</p>
+      <div class="cta reveal">
+        <a class="btn acc lg dl" href="#"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 5.5 10.5 4.5v7H3zm8.5-1.2L21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zm8.5 0H21V21l-9.5-1.3z"/></svg>Baixar para Windows</a>
+        <a class="btn ghost lg" href="#recursos">Ver o que ela faz</a>
+      </div>
+      <p class="mini reveal">Grátis · Windows 10 e 11 · instala em poucos cliques</p>
+    </div>
+    <div class="stage reveal" id="stage">
+      <img class="wall" src="img/fundo.webp" alt="">
+      <div class="island" id="island">
+        <img src="img/ilha-parada.webp" alt="A ilha da Sexta-feira no topo da tela" class="on">
+      </div>
+      <div class="said" id="said"><span id="saidTxt"></span><i class="caret"></i></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee"><div class="track" id="track">
+    <span>“sexta-feira, abre o Discord”</span><span>“toca AC/DC”</span><span>“manda pro Gustavo que já entrei”</span>
+    <span>“qual a build do Yasuo no mid?”</span><span>“como está o tempo?”</span><span>“timer de 10 minutos”</span>
+    <span>“otimiza meu PC”</span><span>“o que tem na minha tela?”</span><span>“quais as notícias de hoje?”</span><span>“modo jogo”</span>
+  </div></div>
+
+  <!-- RECURSOS -->
+  <section class="sec" id="recursos">
+    <div class="head reveal"><span class="kicker">Recursos</span><h2>Um assistente que <span class="acc-txt">entende</span> o que você quer</h2>
+      <p>Não precisa decorar comando. Fale do seu jeito: ela entende o contexto, pergunta quando falta algo e faz.</p></div>
+    <div class="bento">
+      <article class="card big reveal tilt">
+        <div class="txt"><span class="kicker">WhatsApp e Discord</span><h3>Mensagens que ela escreve por você</h3>
+          <p>“Meu PC travou, avisa o Gustavo que não vou jogar.” Ela entende, reescreve e manda: <em>“O Lucas pediu pra avisar que o PC dele travou e ele não vai conseguir jogar agora.”</em> Errou? Ela oferece a correção.</p></div>
+        <div class="shot"><img src="img/desktop-falando.webp" alt="Sexta-feira mandando mensagem" loading="lazy"></div>
+      </article>
+      <article class="card reveal tilt"><div class="ic">🎵</div><h3>Música</h3><p>Toca no Spotify ou YouTube, pausa, pula e mostra o que está tocando com a capa.</p><img class="chip" src="img/cartao-musica.webp" alt="" loading="lazy"></article>
+      <article class="card reveal tilt"><div class="ic">⛅</div><h3>Clima por hora</h3><p>Agora e as próximas horas, com chance de chuva, onde você estiver.</p><img class="chip" src="img/cartao-clima.webp" alt="" loading="lazy"></article>
+      <article class="card reveal tilt"><div class="ic">⏱️</div><h3>Lembretes e timers</h3><p>“Me lembra da reunião amanhã às 2.” Ela pergunta quanto tempo antes quer o aviso.</p><img class="chip" src="img/cartao-timer.webp" alt="" loading="lazy"></article>
+      <article class="card reveal tilt"><div class="ic">📰</div><h3>Notícias do dia</h3><p>Lê as manchetes uma a uma, como um telejornal, e mostra o resumo.</p><img class="chip" src="img/cartao-noticias.webp" alt="" loading="lazy"></article>
+      <article class="card reveal tilt"><div class="ic">🎮</div><h3>Feita pra quem joga</h3><p>Build e itens do LoL pelo OP.GG, contra qual campeão, e modo jogo que não tira FPS.</p></article>
+      <article class="card reveal tilt"><div class="ic">👁️</div><h3>Vê a sua tela</h3><p>“O que você acha dessa arte?” Ela olha a tela e responde de verdade.</p></article>
+      <article class="card reveal tilt"><div class="ic">🚀</div><h3>Deixa o PC rápido</h3><p>Desempenho máximo, libera memória, limpa temporários e diz o que está pesando.</p><img class="chip" src="img/cartao-pc.webp" alt="" loading="lazy"></article>
+      <article class="card reveal tilt"><div class="ic">📂</div><h3>Abre tudo</h3><p>Programas, jogos, sites e pastas em qualquer disco: “abre a pasta dos clientes no disco D”.</p></article>
+    </div>
+  </section>
+
+  <!-- CÉREBRO -->
+  <section class="sec" id="cerebro">
+    <div class="split">
+      <div class="reveal">
+        <span class="kicker">Cérebro</span>
+        <h2>As IAs mais rápidas do mundo, <span class="acc-txt">trabalhando juntas</span></h2>
+        <p>No automático, conversa vai para a IA mais rápida e pergunta difícil para a mais inteligente. Se uma bater no limite, ela troca sozinha. Funciona até sem internet, com a IA no seu PC.</p>
+        <ul class="ticks"><li>Groq e Gemini grátis, só colar a chave</li><li>Use a sua conta do Claude ou do ChatGPT</li><li>Memória: lembra dos seus gostos, amigos e rotinas</li><li>Entende palavra mal ouvida pelo sentido da frase</li></ul>
+      </div>
+      <div class="speed card reveal">
+        <span class="kicker">Tempo até a 1ª palavra</span>
+        <div class="bar"><span>Groq</span><div><i style="--w:8%" data-v="0,5 s"></i></div></div>
+        <div class="bar"><span>Claude</span><div><i style="--w:30%" data-v="~2 s"></i></div></div>
+        <div class="bar"><span>Gemini</span><div><i style="--w:34%" data-v="~2 s"></i></div></div>
+        <div class="bar dim"><span>Assistentes comuns</span><div><i style="--w:100%" data-v="5–7 s"></i></div></div>
+        <p class="mini">Medido no nosso PC de testes. A voz começa a falar antes de a resposta terminar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENTRAL -->
+  <section class="sec" id="central">
+    <div class="head reveal"><span class="kicker">A Central</span><h2>Tudo num só lugar, do jeito que você gosta</h2>
+      <p>Clique na ilha e abre a Central: conversa, memória em forma de cérebro, tarefas, hábitos, timers, música, copiados, rotinas e o seu PC.</p></div>
+    <div class="tabs reveal" id="tabs">
+      <button class="on" data-i="inicio">Início</button><button data-i="memoria">Memória</button><button data-i="personalizar">Personalizar</button>
+      <button data-i="cerebro">Cérebro</button><button data-i="meupc">Meu PC</button><button data-i="tarefas">Tarefas</button>
+      <button data-i="rotinas">Rotinas</button><button data-i="habitos">Hábitos</button>
+    </div>
+    <div class="window reveal tilt">
+      <div class="shots" id="shots">
+        <img class="on" data-i="inicio" src="img/central-inicio.webp" alt="Central — Início">
+        <img data-i="memoria" src="img/central-memoria.webp" alt="Central — Memória em grafo" loading="lazy">
+        <img data-i="personalizar" src="img/central-personalizar.webp" alt="Central — Personalizar mascote" loading="lazy">
+        <img data-i="cerebro" src="img/central-cerebro.webp" alt="Central — Cérebro" loading="lazy">
+        <img data-i="meupc" src="img/central-meupc.webp" alt="Central — Meu PC" loading="lazy">
+        <img data-i="tarefas" src="img/central-tarefas.webp" alt="Central — Tarefas" loading="lazy">
+        <img data-i="rotinas" src="img/central-rotinas.webp" alt="Central — Rotinas" loading="lazy">
+        <img data-i="habitos" src="img/central-habitos.webp" alt="Central — Hábitos" loading="lazy">
+      </div>
+    </div>
+    <p class="cap reveal" id="cap">Seu dia num olhar: conversa, música tocando, tarefas, lembretes e hábitos.</p>
+  </section>
+
+  <!-- MASCOTE / CARTÕES -->
+  <section class="sec">
+    <div class="head reveal"><span class="kicker">A ilha</span><h2>Ela vive no topo da tela, <span class="acc-txt">e tem personalidade</span></h2>
+      <p>Um mascote que ouve, pensa e fala com você. Personalize olhos, cor e acessório. Quando responde, mostra cartões bonitos com a informação.</p></div>
+    <div class="cards-row reveal" id="row">
+      <img src="img/cartao-relogio.webp" alt="" loading="lazy"><img src="img/cartao-clima.webp" alt="" loading="lazy"><img src="img/cartao-tarefas.webp" alt="" loading="lazy">
+      <img src="img/cartao-musica.webp" alt="" loading="lazy"><img src="img/cartao-noticias.webp" alt="" loading="lazy"><img src="img/cartao-timer.webp" alt="" loading="lazy">
+      <img src="img/cartao-pc.webp" alt="" loading="lazy">
+    </div>
+  </section>
+
+  <!-- AMIGOS -->
+  <section class="sec" id="amigos">
+    <div class="split rev">
+      <div class="card glass reveal tilt"><img src="img/central-amigos.webp" alt="Amigos e ligações" loading="lazy" class="r"></div>
+      <div class="reveal">
+        <span class="kicker">Com os amigos</span>
+        <h2>Sexta-feira conversa com <span class="acc-txt">outras Sexta-feiras</span></h2>
+        <p>Cada Sexta-feira tem um código de amigo. Adicione a galera e diga “fala pro Gustavo que já vou entrar”: o recado aparece e é falado na tela dele. Quer conversar? “Liga pro Gustavo” abre uma ligação de voz ou vídeo, com limpeza de ruído.</p>
+        <ul class="ticks"><li>Recados falados na tela do amigo</li><li>Ligações de voz e vídeo em grupo</li><li>Vê quando os amigos estão em ligação e entra junto</li><li>Rotinas: “modo jogo” abre o Discord, o jogo e baixa o volume</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALAR -->
+  <section class="sec" id="instalar">
+    <div class="split">
+      <div class="reveal">
+        <span class="kicker">Instalação</span>
+        <h2>Instala como qualquer programa</h2>
+        <ol class="steps"><li><b>Baixe</b> o instalador</li><li><b>Digite seu nome</b> e clique em Instalar</li><li><b>Diga “sexta-feira”</b>. Pronto.</li></ol>
+        <p>Ela se atualiza sozinha: quando sai versão nova, ela avisa e atualiza com um clique.</p>
+        <a class="btn acc lg dl" href="#">Baixar grátis para Windows</a>
+      </div>
+      <div class="installer reveal tilt"><img src="img/instalador.webp" alt="Instalador da Sexta-feira" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="head reveal"><span class="kicker">Dúvidas</span><h2>Perguntas frequentes</h2></div>
+    <div class="faq reveal">
+      <details><summary>É grátis?</summary><p>Sim. A Sexta-feira é grátis. As IAs na nuvem (Groq e Gemini) também têm planos grátis: é só criar a chave e colar na Central. Se você já assina Claude ou ChatGPT, pode usar a sua conta.</p></details>
+      <details><summary>Pesa no meu PC? E nos jogos?</summary><p>Não. Com a IA na nuvem ela usa pouca memória, e quando você abre um jogo entra no modo jogo sozinha: fica leve e não tira FPS.</p></details>
+      <details><summary>Ela fica me ouvindo o tempo todo?</summary><p>Ela só reage quando você diz “sexta-feira”. O reconhecimento do nome roda no seu PC; o pedido vai para a IA que você escolheu.</p></details>
+      <details><summary>Preciso de placa de vídeo boa?</summary><p>Não. Com a nuvem ela roda em qualquer PC com Windows 10 ou 11. Com uma placa NVIDIA, ela também pode funcionar 100% offline.</p></details>
+      <details><summary>Funciona com WhatsApp e Discord?</summary><p>Sim, usando o WhatsApp e o Discord instalados no seu PC. Ela abre a conversa e manda por você, e pergunta antes quando não tem certeza de onde mandar.</p></details>
+      <details><summary>Como atualiza?</summary><p>Sozinha. Quando sai uma versão nova aparece o aviso “Atualização disponível”; você aceita e ela reinicia já atualizada.</p></details>
+    </div>
+  </section>
+
+  <section class="final reveal">
+    <img src="img/logo.webp" alt="" width="84" height="84">
+    <h2>Diga oi para a sua <span class="acc-txt">Sexta-feira</span></h2>
+    <a class="btn acc lg dl" href="#">Baixar grátis para Windows</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="yr"></span> Sexta-feira · feito pela <b>Agência Base</b></span>
+  <a href="https://github.com/allysonsilva98ap/sexta-feira/releases" target="_blank" rel="noopener">Versões e novidades</a>
+</footer>
+<script src="app.js?v=3"></script>
+</body>
+</html>
