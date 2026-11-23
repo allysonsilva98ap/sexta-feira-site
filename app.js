@@ -1,5 +1,9 @@
 const DL = "https://github.com/allysonsilva98ap/sexta-feira/releases/latest/download/Instalar-Sexta-feira.exe";
 document.querySelectorAll(".dl").forEach(a => { a.href = DL; a.setAttribute("rel", "noopener"); });
+// versão: o número no HTML é trocado a cada publicação; aqui confirma com a última versão publicada no GitHub
+fetch("https://api.github.com/repos/allysonsilva98ap/sexta-feira/releases/latest").then(r => r.ok ? r.json() : null)
+  .then(j => { const v = j && String(j.tag_name || "").replace(/^v/, ""); if (/^\d+(\.\d+)+$/.test(v)) document.querySelectorAll(".ver").forEach(e => e.textContent = v); })
+  .catch(() => {});
 document.getElementById("yr").textContent = new Date().getFullYear();
 
 // nav + brilho que segue o mouse
